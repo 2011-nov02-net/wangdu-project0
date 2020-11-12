@@ -13,31 +13,31 @@ namespace Project0
     {
         public static void Main(string[] args)
         {
-            Student student = new Student()
-            {
-                Id = 1,
-                Name = "Tenzin",
-                Degree = "BA",
-                Hobbies = new List<string>()
-                {
-                    "Reading",
-                    "Playing Games"
-                }
-            };
-            string strResultJson = JsonConvert.SerializeObject(student);
-            File.WriteAllText(@"student.json", strResultJson);
-            Console.WriteLine("stored");
+            // Student student = new Student()
+            // {
+            //     Id = 1,
+            //     Name = "Tenzin",
+            //     Degree = "BA",
+            //     Hobbies = new List<string>()
+            //     {
+            //         "Reading",
+            //         "Playing Games"
+            //     }
+            // };
+            // string strResultJson = JsonConvert.SerializeObject(student);
+            // File.WriteAllText(@"student.json", strResultJson);
+            // Console.WriteLine("stored");
 
-            strResultJson = String.Empty;
-            strResultJson = File.ReadAllText(@"student.json");
-            //   Student resultStudent = JsonConvert.DeserializeObject<Student>(strResultJson);
-            //  Console.WriteLine(resultStudent.ToString());
+            // strResultJson = String.Empty;
+            // strResultJson = File.ReadAllText(@"student.json");
+            // //   Student resultStudent = JsonConvert.DeserializeObject<Student>(strResultJson);
+            // //  Console.WriteLine(resultStudent.ToString());
 
-            var dictionary = JsonConvert.DeserializeObject<IDictionary>(strResultJson);
-            foreach(DictionaryEntry entry in dictionary)
-            {
-                Console.WriteLine(entry.Key + ": " + entry.Value);
-            }
+            // var dictionary = JsonConvert.DeserializeObject<IDictionary>(strResultJson);
+            // foreach(DictionaryEntry entry in dictionary)
+            // {
+            //     Console.WriteLine(entry.Key + ": " + entry.Value);
+            // }
         }
     } 
 }
