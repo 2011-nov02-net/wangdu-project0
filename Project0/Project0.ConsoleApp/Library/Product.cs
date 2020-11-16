@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Project0.Library
+namespace Project0.ConsoleApp.Library
 {
     public class Product
     {
         private int _id;
         private decimal _price;
+        
 
         // Product ID
         public int Id
@@ -48,7 +49,7 @@ namespace Project0.Library
                 }
             }
         }
-
+       
         // Constructor
         public Product(int id, decimal price)
         {
