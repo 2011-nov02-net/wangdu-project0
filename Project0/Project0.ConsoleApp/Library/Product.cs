@@ -8,7 +8,7 @@ namespace Project0.ConsoleApp.Library
     {
         private int _id;
         private decimal _price;
-        
+
 
         // Product ID
         public int Id
@@ -30,7 +30,7 @@ namespace Project0.ConsoleApp.Library
             }
         }
 
-        // Product Pruce
+        // Product Price
         public decimal Price
         {
             get
@@ -49,7 +49,7 @@ namespace Project0.ConsoleApp.Library
                 }
             }
         }
-       
+
         // Constructor
         public Product(int id, decimal price)
         {
@@ -58,3 +58,4 @@ namespace Project0.ConsoleApp.Library
         }
     }
 }
+

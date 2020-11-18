@@ -4,20 +4,18 @@ using System.Text;
 
 namespace Project0.ConsoleApp.Library
 {
-     public class Store
-     {
-        private static int StoreId = 0;
-        public List<Customer> CustomerList { get; set; }
-       
+    public class Store
+    {
+        public int StoreId { get; set; }
+        public HashSet<Customer> Customers { get; set; } = new HashSet<Customer>();
+        public string Customer { get; set; }
 
-        public int Id;
-        public Store()
+        public Store(int storeId, string customer)
         {
-            Id = StoreId;
-            CustomerList = new List<Customer>();
-            ++StoreId;
+            StoreId = storeId;
+            Customer = customer;
         }
 
- 
+
     }
 }

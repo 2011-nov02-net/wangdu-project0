@@ -6,7 +6,7 @@ namespace Project0.ConsoleApp.Library
 {
     public class Location
     {
-        private string _storeId; 
+        private string _storeId;
         private int _productId;
         private int _quantity;
 

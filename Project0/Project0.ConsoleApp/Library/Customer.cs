@@ -7,18 +7,26 @@ namespace Project0.ConsoleApp.Library
     public class Customer
     {
         public string Name { get; set; }
-        private static int IdSeed = 0;
-        public int CustomerId;
+        public int Id { get; set; }
+        
+        // For Displaying the Order History of a customer
+
+
         //CONSTRUCTORS
+        public Customer(int customerId, string name)
+        {
+            Name = name;
+            Id = customerId;
+            
+        }
         public Customer(string name)
         {
-            CustomerId = IdSeed;
             Name = name;
-            ++IdSeed;
         }
         override public string ToString()
         {
-            return "Name: " + Name + " CustomerId: " + CustomerId;
+            return $"Name:  {Name}  CustomerId: {Id}";
         }
     }
+
 }

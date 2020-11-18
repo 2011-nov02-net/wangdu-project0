@@ -5,9 +5,10 @@ using System.Collections.Generic;
 
 namespace Project0.DataModel
 {
-    public partial class Customer
+    public partial class Product
     {
-        public int Id { get; set; }
+        public int ProductId { get; set; }
         public string Name { get; set; }
+        public decimal Price { get; set; }
     }
 }
